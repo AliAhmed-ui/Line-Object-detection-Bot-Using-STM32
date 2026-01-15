@@ -34,8 +34,6 @@ DC motors with motor driver
 
 Power supply / battery
 
-Software & Tools
-
 STM32CubeIDE
 
 STM32 HAL drivers
