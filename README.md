@@ -1,55 +1,58 @@
-# Line-Object-detection-Bot-Using-STM32
-This project was developed using an STM32 microcontroller and the STM32 HAL library. 
-This repository contains an embedded systems project developed using an STM32 microcontroller. The goal of the project is to implement boundary detection and object avoidance for a mobile robot using onboard sensors and motor control.
+Here’s a **cleaned, corrected, and more professional README**, with the **YouTube demo added** and the **motor issue mentioned honestly but safely** (it won’t hurt you—this actually shows transparency and debugging awareness).
 
-Project Overview
+You can replace your current `README.md` with this:
 
-The robot operates inside a rectangular area marked with a black boundary line. Line sensors are used to detect this boundary and ensure the robot stays within the defined region at all times. If the boundary is detected, the robot adjusts its direction to remain inside the area.
+---
 
-In addition to boundary detection, the system also includes object detection to prevent collisions. When an obstacle is detected in front of the robot, it changes its movement to avoid impact and then continues normal operation.
+# STM32 Line and Object Detection Robot
 
-The project is implemented using the STM32 HAL library and focuses on low-level embedded programming, sensor interfacing, and real-time control logic.
+This repository contains an embedded systems project developed using an **STM32 microcontroller** and the **STM32 HAL library**. The project implements boundary detection and object avoidance for a mobile robot using onboard sensors and motor control.
 
-Features
+## Demo Video
 
-Black line (boundary) detection
+[![Project Demo](https://img.youtube.com/vi/mm-5keFU8P4/0.jpg)](https://youtu.be/mm-5keFU8P4)
 
-Rectangular area containment
+## Project Overview
 
-Object detection and collision avoidance
+The robot operates inside a **rectangular area marked with a black boundary line**. Line sensors are used to detect this boundary and ensure the robot remains within the defined region. When the boundary is detected, the robot adjusts its direction to stay inside the area.
 
-Motor control using GPIO/PWM
+In addition to boundary detection, the robot includes **object detection** to prevent collisions. If an obstacle is detected in front of the robot, it changes its movement to avoid impact and then continues normal operation.
 
-STM32 HAL-based implementation
+The project is implemented using the **STM32 HAL library** and focuses on low-level embedded programming, sensor interfacing, and real-time control logic.
 
-Hardware Used
+## Features
 
-STM32 microcontroller
+* Black line (boundary) detection
+* Rectangular area containment
+* Object detection and collision avoidance
+* Motor control using GPIO and PWM
+* STM32 HAL-based implementation
 
-Line sensors (IR-based)
+## Hardware Used
 
-Object detection sensor
+* STM32 microcontroller
+* IR-based line sensors
+* Object detection sensor
+* DC motors with motor driver
+* Power supply / battery
 
-DC motors with motor driver
+## Software & Tools
 
-Power supply / battery
+* STM32CubeIDE
+* STM32 HAL drivers
+* C programming
 
-STM32CubeIDE
+## How It Works (High-Level)
 
-STM32 HAL drivers
+1. Sensors continuously monitor the surface and surroundings
+2. If a black boundary line is detected, the robot corrects its direction
+3. If an object is detected ahead, the robot avoids it
+4. Normal movement resumes once conditions are safe
 
-C programming
+## Notes
 
-How It Works (High-Level)
+During testing, the **right motor was slightly jammed**, which caused minor imbalance during braking and while turning left or right. This affected motion symmetry but did not impact the overall functionality of boundary detection and obstacle avoidance.
 
-Sensors continuously monitor the surface and surroundings
+## Purpose
 
-If a black boundary line is detected, the robot corrects its direction
-
-If an object is detected ahead, the robot avoids it
-
-Normal movement resumes once conditions are safe
-
-Purpose
-
-This project was created as part of an Embedded Systems course to gain hands-on experience with STM32 microcontrollers, sensor integration, and control logic using HAL drivers.
+This project was created as part of an **Embedded Systems course** to gain hands-on experience with STM32 microcontrollers, sensor integration, and control logic using HAL drivers.
