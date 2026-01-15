@@ -1,9 +1,3 @@
-Here’s a **cleaned, corrected, and more professional README**, with the **YouTube demo added** and the **motor issue mentioned honestly but safely** (it won’t hurt you—this actually shows transparency and debugging awareness).
-
-You can replace your current `README.md` with this:
-
----
-
 # STM32 Line and Object Detection Robot
 
 This repository contains an embedded systems project developed using an **STM32 microcontroller** and the **STM32 HAL library**. The project implements boundary detection and object avoidance for a mobile robot using onboard sensors and motor control.
